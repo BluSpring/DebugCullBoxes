@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "id": "debugcullboxes",
+    "version": "${version}",
+    "name": "DebugCullBoxes",
+    "description": "",
+    "authors": [],
+    "contact": {
+        "repo": "https://github.com/BluSpring/DebugCullBoxes"
+    },
+    "license": "MIT",
+    "icon": "assets/debugcullboxes/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "xyz.bluspring.debugcullboxes.client.DebugCullBoxesClient"
+        ]
+    },
+    "mixins": [
+        "debugcullboxes.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": ">=1.20.1"
+    }
+}
